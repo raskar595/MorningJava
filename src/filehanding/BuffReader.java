@@ -16,7 +16,7 @@ public class BuffReader {
 //		System.out.println(br.readLine());
 //		br.read();
 		
-		
+		System.out.println("Welcome");
 		BufferedWriter bw=new BufferedWriter(new FileWriter("D://Others/suraj.txt"));
 		
 		bw.write("ghjk");
