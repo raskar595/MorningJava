@@ -23,7 +23,7 @@ public class BuffReader {
 		bw.close();
 		
 		System.out.println("Data wrote successfully.");
-		
+		System.out.println("The end....");
 
 	}
 
