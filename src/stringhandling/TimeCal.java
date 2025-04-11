@@ -7,7 +7,6 @@ public class TimeCal {
 		
 		long start,end;
 		
-//		start=System.currentTimeMillis();
 		start=System.nanoTime();
 		String str="Welcome To ";
 		
@@ -16,7 +15,31 @@ public class TimeCal {
 		}
 		end=System.nanoTime();
 		
-		System.out.println("String Takes "+(end-start)+" mili sec.");
+		System.out.println("String Takes "+(end-start)+" Nano sec.");
+		
+		//Buffer
+		
+		start=System.nanoTime();
+		StringBuffer str1=new StringBuffer("Welcome To ");
+		
+		for(int i=1; i<=1000; i++) {
+			str1.append(" Logipool");
+		}
+		end=System.nanoTime();
+		
+		System.out.println("StringBuffer Takes "+(end-start)+" Nano sec.");
+		
+		//Builder
+		
+				start=System.nanoTime();
+				StringBuilder str2=new StringBuilder("Welcome To ");
+				
+				for(int i=1; i<=1000; i++) {
+					str2.append(" Logipool");
+				}
+				end=System.nanoTime();
+				
+				System.out.println("StringBuilder Takes "+(end-start)+" Nano sec.");		
 		
 		
 	}
